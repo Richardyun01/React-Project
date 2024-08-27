@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Grid, TextField } from "@mui/material";
 
-const AddTodo = () => {
+const AddTodo = (props) => {
     //사용자의 입력을 저장할 오브젝트
     const [item, setItem] = useState({title: ""});
     const addItem = props.addItem;
